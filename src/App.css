@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, rgb(246, 247, 223), rgb(250, 250, 148));
+  width: 100vw;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.float > img{
+  margin-left: 200px;
+  height: 1000px;
+  margin-top: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  height: 1300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.float{
+  display: grid;
+  grid-template-columns: repeat(2, 0.7fr);
+  /* grid-gap: px; */
+}
+
+.App-content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.App-footer{
+  position: relative;
+  margin: 10px 10px;
+  padding: 20px 20px;
+  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 300px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.App-footer p {
+  margin: 0;
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.App-footer a {
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.partition{
+  text-align: center;
+}
+
+.partition > p{
+  text-align: center;
+  width: 100%;
+  text-emphasis: 100;
 }
